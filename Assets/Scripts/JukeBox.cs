@@ -8,7 +8,15 @@ public class JukeBox : MonoBehaviour
 
     public static Sound sound;
 
-    public static AudioFade FadeIn;
+    // public static AudioFade FadeIn;
+
+    //public string BGM;
+
+    //public float fadeTime;
+
+    //public static FadingScript FadeIn;
+
+
     void Awake()
     {
         // This is in case we don't have a JukeBox in our scene already
@@ -23,7 +31,7 @@ public class JukeBox : MonoBehaviour
             return;
         }
 
-       
+
         // This will allow us to use the Jukebox on multiple scenes 
         // This will also not let the 
 
@@ -47,7 +55,7 @@ public class JukeBox : MonoBehaviour
 
     public static JukeBox instance;
 
-    public void Play (string _name)
+    public void Play(string _name)
     {
         // This will allow us to name a sound in the inspector and be able to get called from here
         // Meaning if we Name something like "Hit sound" in the inspector this will look for that string and play that sound 
@@ -73,15 +81,47 @@ public class JukeBox : MonoBehaviour
 
     }
 
-    
+
     void Start()
     {
         // Here we are going to demonstrate background music every time we start the scene
         Play("BGM");
 
-        StartCoroutine("FadeIn", sound);
-        //StartCoroutine(FadeIn (sound));
-        
-        //StartCoroutine(AudioFade.FadeIn("BGM", 3f, Mathf.SmoothStep));
+        //if (sound != null)
+        //{
+
+        //  MAYBE THIS   StartCoroutine("FadeIn", (sound));
+
+        //}
+
+        // StartCoroutine(FadingScript.FadeIn(BGM, 5f));
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//StartCoroutine(AudioFade.FadeIn(sound, 3f, Mathf.SmoothStep));
