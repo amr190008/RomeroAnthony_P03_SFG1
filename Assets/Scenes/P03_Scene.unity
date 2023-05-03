@@ -692,15 +692,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - _name: Car Sound
+  - _name: Cube Noise
     _clip: {fileID: 0}
     _volume: 0
     _pitch: 0
+    _loop: 0
     _source: {fileID: 0}
-  - _name: Asteroid
-    _clip: {fileID: 0}
-    _volume: 0
-    _pitch: 0
+  - _name: BGM
+    _clip: {fileID: 8300000, guid: 2faae2318ab85b141aeefd5da0524211, type: 3}
+    _volume: 0.203
+    _pitch: 1
+    _loop: 1
     _source: {fileID: 0}
 --- !u!4 &1956417480
 Transform:
